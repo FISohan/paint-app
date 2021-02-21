@@ -1,27 +1,23 @@
 import { context } from "./main.js";
 var canvas = document.getElementById("canvas");
-//var context = canvas.getContext("2d");
 
-var beginPosition = {
-  x: null,
-  y: null,
-};
-
-context.moveTo(beginPosition.x, beginPosition.y);
-
-function drawLine(begin, end) {
+function drawLine(end) {
   context.lineTo(...end);
   context.stroke();
 }
 
 canvas.addEventListener("mousemove", (e) => {
-  if (e.altKey) {
-    drawLine(
-      [beginPosition.x, beginPosition.y],
-      [e.clientX - 35, e.clientY - 101]
-    );
-    console.log("mouse move");
-  }else context.beginPath();
-  
+  if (e.altKey || e.ctrlKey) {
+    drawLine([e.clientX - 35, e.clientY - 101]);
+    // console.log("mouse move");
+  } else context.beginPath();
 });
 
+canvas.addEventListener("touchmove", (e) => {
+  drawLine([e.touches[0].clientX - 35, e.touches[0].clientY - 101]);
+  console.log(e.touches[0].clientX - 35, e.touches[0].clientY - 101);
+});
+
+canvas.addEventListener("touchend",(e)=>{
+    context.beginPath();
+})
