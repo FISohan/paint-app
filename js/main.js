@@ -1,17 +1,15 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 
-// function init() {
-//   canvas.width = window.innerWidth - 30;
-//   canvas.height = window.innerHeight - 100;
-//   var h = canvas.clientHeight;
-//   var w = canvas.clientWidth;
-//   canvas.style.marginLeft = `${(window.innerWidth - w) / 2}px`;
-// }
-// window.onload = function () {
-//   init();
-// };
+function drawLine(x,y){
+    context.beginPath();
+    context.rect(x, y, 10, 10);
+    context.closePath();
+    
+    
+}
 
-// window.addEventListener("resize", (e) => {
-//     init()
-// });
+canvas.addEventListener("mousemove",(e)=>{
+    drawLine(e.clientX - 35,e.clientY - 101)
+    console.log(e);
+})
