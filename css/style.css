@@ -1,7 +1,9 @@
 canvas{
-    border: solid gray 1px;
+    border: solid gray 2px;
     cursor: crosshair;
-    margin: 0px;
+    position: absolute;
+    border-radius: 5px;
+    margin: 2px;
 }
 
 *{

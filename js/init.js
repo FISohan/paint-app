@@ -1,9 +1,7 @@
 import { canvas } from "./main.js";
 function init() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  // canvas.style.marginLeft = `${(window.innerWidth - canvas.clientWidth) / 2}px`;
-  // canvas.style.marginTop = `${(window.innerHeight - canvas.clientHeight) - 15}px`;
+  canvas.width = window.innerWidth / 1.25;
+  canvas.height = window.innerHeight / 1.01;
 }
 window.onload = function () {
   init();
