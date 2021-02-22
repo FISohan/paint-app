@@ -1,5 +1,7 @@
 canvas{
     border: solid gray 1px;
+    cursor: crosshair;
+    margin: 0px;
 }
 
 *{
