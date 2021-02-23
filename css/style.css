@@ -1,13 +1,37 @@
-canvas{
-    border: solid gray 2px;
-    cursor: crosshair;
-    position: absolute;
-    border-radius: 5px;
-    margin: 2px;
+canvas {
+  border: solid gray 2px;
+  cursor: crosshair;
+  border-radius: 5px;
+  margin: 2px;
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+.btn {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.tool-btn-box {
+  position: relative;
+}
+.tool {
+  display: none;
+}
+.tools-box {
+  position: absolute;
+
+  left: 50%;
+  bottom: 50%;
+}
+.draw-box {
+  display: inline;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }

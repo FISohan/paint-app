@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Paint app</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <canvas id="canvas"></canvas>
+      <canvas id="canvas"></canvas>
     </div>
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/init.js"></script>
-    <script type="module" src="js/paint.js"></script>
-</body>
+    <div class="tool-btn-box">
+      <button class="show_line_tools btn">DRAW</button>
+      <button class="show_shape_tools btn">SHAPE</button>
+      <button class="show_erase_tools btn">ERASE</button>
+
+      <div class="tools-box">
+        <div id="line-tool" class="tool">line tools</div>
+        <div id="shape-tool" class="tool">shape tools</div>
+        <div id="erase-tool" class="tool">erase tools</div>
+      </div>
+    </div>
+
+    <script type="module" defer src="js/main.js"></script>
+    <script type="module" defer src="js/init.js"></script>
+    <script type="module" defer src="js/paint.js"></script>
+    <script type="module" src="js/tool-box.js"></script>
+  </body>
 </html>
