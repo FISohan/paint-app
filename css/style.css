@@ -23,13 +23,14 @@ canvas {
 }
 .tools-box {
   position: absolute;
-
-  left: 50%;
-  bottom: 50%;
+  left: 30%;
+  bottom: 5%;
+  display: flex;
 }
 .draw-box {
   display: inline;
 }
+
 * {
   box-sizing: border-box;
   padding: 0px;
