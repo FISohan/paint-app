@@ -7,6 +7,7 @@ export var config = {
 };
 var isDraw = false;
 var lineStyle = {
+  id:'line',
   point: [],
   lineWidth: 2,
   color: document.querySelector("#input-color").value,

@@ -3,6 +3,7 @@ canvas {
   cursor: crosshair;
   border-radius: 5px;
   margin: 2px;
+  touch-action: none;
 }
 
 .btn {
