@@ -5,7 +5,9 @@ canvas {
   margin: 2px;
   touch-action: none;
 }
-
+input select{
+  margin-bottom: 30px;
+}
 .btn {
   display: block;
   padding-top: 5px;
@@ -25,8 +27,7 @@ canvas {
 .tools-box {
   position: absolute;
   left: 30%;
-  bottom: 5%;
-  display: flex;
+  bottom: -20%;
 }
 .draw-box {
   display: inline;

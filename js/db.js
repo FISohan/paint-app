@@ -1,1 +1,1 @@
-export var draw = [];
+export var lineData = [];

@@ -22,6 +22,8 @@
           <input type="color" id="input-color" class="input" />
           <label>Line width</label>
           <input type="range" id="line-width" min="1" value="1" max="200" class="input" />
+          <br>
+          <hr>
           <label for="line-cap">Line cap</label>
           <select name="line-cap" id="line-cap" class="input">
             <option value="butt">Butt</option>
@@ -34,18 +36,22 @@
             <option value="round">Round</option>
             <option value="miter">Miter</option>
           </select>
+          <br>
+          <hr>
           <label for="Line dash">Line dash</label>
           <input type="text" id="line-dash" placeholder="1,2">
+          <button id="x" class="btn">UNDO</button>
+
         </div>
         <div id="shape-tool" class="tool">shape tools</div>
         <div id="erase-tool" class="tool">erase tools</div>
       </div>
     </div>
-    <button id="x">show</button>
     <script type="module" defer src="js/main.js"></script>
     <script type="module" defer src="js/init.js"></script>
     <script type="module" defer src="js/paint.js"></script>
     <script type="module" src="js/db.js"></script>
     <script type="module" src="js/tool-box.js"></script>
+    <script type="module" src="js/render.js"></script>
   </body>
 </html>
